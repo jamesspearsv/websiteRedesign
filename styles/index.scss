@@ -1,0 +1,49 @@
+@import 'variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+body {
+    overflow-x: hidden;
+}
+
+nav{
+    height: 100vh;
+    width: 15%;
+    background-color: $primaryColor;
+    position: fixed;
+
+    img {
+        height: auto;
+        width: 50%;
+        display: block;
+        margin: 3% auto 3% auto;
+        border-radius: 100%;
+    }
+
+    hr {
+        width: 85%;
+        margin: auto;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        
+        li {
+            margin: auto;
+        }
+    }
+}
+
+main {
+    #contentContainer {
+        width: 85%;
+        margin-left: 15%;
+    }
+}
