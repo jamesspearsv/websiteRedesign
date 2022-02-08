@@ -6,44 +6,35 @@
     box-sizing: border-box;
   }
 
-
 body {
-    overflow-x: hidden;
-}
+    nav {
+        height: 100vh;
+        width: 20vw;
 
-nav{
-    height: 100vh;
-    width: 15%;
-    background-color: $primaryColor;
-    position: fixed;
+        position: absolute;
 
-    img {
-        height: auto;
-        width: 50%;
-        display: block;
-        margin: 3% auto 3% auto;
-        border-radius: 100%;
-    }
+        #navHeader {
+            width: 100%;
+            height: 10%;
+            background-color: rgb(184, 162, 136);
 
-    hr {
-        width: 85%;
-        margin: auto;
-    }
+            #menuButton {
+                display: none;
+            }
 
-    ul {
-        display: flex;
-        flex-direction: column;
-        list-style: none;
-        
-        li {
-            margin: auto;
+        }
+
+        #navMenu {
+            width: 100%;
+            height: 90%;
+            background-color: burlywood;
         }
     }
-}
 
-main {
-    #contentContainer {
-        width: 85%;
-        margin-left: 15%;
+    main {
+        margin-left: 20vw;
+        padding: 2%;
     }
 }
+
+@import 'mobile';

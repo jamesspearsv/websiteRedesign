@@ -7,47 +7,56 @@
           box-sizing: border-box;
 }
 
-body {
-  overflow-x: hidden;
-}
-
-nav {
+body nav {
   height: 100vh;
-  width: 15%;
-  background-color: #454955;
-  position: fixed;
+  width: 20vw;
+  position: absolute;
 }
 
-nav img {
-  height: auto;
-  width: 50%;
-  display: block;
-  margin: 3% auto 3% auto;
-  border-radius: 100%;
+body nav #navHeader {
+  width: 100%;
+  height: 10%;
+  background-color: #b8a288;
 }
 
-nav hr {
-  width: 85%;
-  margin: auto;
+body nav #navHeader #menuButton {
+  display: none;
 }
 
-nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  list-style: none;
+body nav #navMenu {
+  width: 100%;
+  height: 90%;
+  background-color: burlywood;
 }
 
-nav ul li {
-  margin: auto;
+body main {
+  margin-left: 20vw;
+  padding: 2%;
 }
 
-main #contentContainer {
-  width: 85%;
-  margin-left: 15%;
+@media (max-width: 750px) {
+  body {
+    overflow-x: hidden;
+  }
+  body nav {
+    height: 100vh;
+    width: 100vw;
+  }
+  body nav #navHeader #menuButton {
+    display: block;
+    margin-left: auto;
+  }
+  body nav #navMenu {
+    height: 0%;
+  }
+  body nav #navMenu #list {
+    display: none;
+  }
+  body nav.opened #navMenu {
+    height: 90%;
+  }
+  body nav.opened #navMenu #list {
+    display: block;
+  }
 }
 /*# sourceMappingURL=index.css.map */
